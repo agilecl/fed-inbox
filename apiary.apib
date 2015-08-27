@@ -5,6 +5,24 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
+## List all users's documents in status "to sign" [/getUserDocumentsToSign]
+
+### List all users's documents in status "to sign" [GET]
+
++ Response 200 (applicarion/json)
+
+        [ { "docId" : 1,
+            "docName" : "Name doc 1",
+            "verificationCode" : "VC 1",
+            "signees" : ["F1", "F2"]
+         }, 
+         {
+         "docId" : 2,
+            "docName" : "Name doc 2",
+            "verificationCode" : "VC 2",
+            "signees" : ["F1", "FB"]
+         }
+        ]
 ## Questions Collection [/questions]
 
 ### List All Questions [GET]
