@@ -7,7 +7,11 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ## List all users's documents in status "to sign" [/getUserDocumentsToSign]
 
-### List all users's documents in status "to sign" [GET]
+### List all users's documents in status "to sign" [POST]
+
+
++ userID (number) - User RUT without DV
++ challenge (string) - A greeating signed with the private key of the Application
 
 + Request (application/json)
 
