@@ -9,6 +9,11 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ### List all users's documents in status "to sign" [GET]
 
++ Request (application/json)
+
+        {"userID" : 1, "challenge" : "SIGNED CHALLENGE B64"}
+
+        
 + Response 200 (applicarion/json)
 
         [ { "docId" : 1,
